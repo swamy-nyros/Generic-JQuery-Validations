@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<meta name="author" content="swamy"> 
+	<title>Generic Validations on JQuery</title>
+	<!-- External css file  -->
+	<link rel="stylesheet" type="text/css" href="include/css/style.css">
+	<!-- Jquery file    -->
+	<script type="text/javascript" src="include/js/myjquery.js"></script>	
+	<!-- Validations file  -->
+	<script type="text/javascript" src="include/js/myvalidations.js"></script>	
+
+</head>
+<body>
+	<main>
+		<header>Application Form</header>
+		<!--   form start -->
+		<form name="application" novalidate onSubmit="return formGenericValidation(this)" method="post" >
+			<table>
+			  <tbody>
+				<tr>
+					<td><label for="name">Name:</label></td>
+					<td><input type="text" name="your name" size="50" min="5" max="15"placeholder="Enter your name" ></td>
+				</tr>	
+				
+				<tr>
+					<td><label>Password:</label></td>
+					<td><input type="password" name="password" size="50"  placeholder="Password"
+					min="6" max="12"></td>
+				</tr>	
+				<tr>
+					<td><label>Moblie No:</label></td>
+					<td><input type="number" name="mobile" size="50" max="10" placeholder="Your Contact Number"></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email id:</label></td>
+					<td><input type="email" name="email" size="50" required="true" placeholder="Your Email id"></td>
+				</tr>
+				<tr></tr>	
+				<tr class="sex">
+					<td><label>Gender:</label></td>
+					<td><input type="radio" name="sex" value="Male" >Male &nbsp&nbsp
+						<input type="radio" name="sex" value="Female">Female
+					</td>
+					<td></td>
+				</tr>
+				<tr >
+					<td><label>Interests:</label></td>
+					<td>
+						<ul>
+							<li>Games<input type="checkbox" name="interests" size="10"></li>&nbsp
+							<li>Movies<input type="checkbox" name="interests" size="10"></li>&nbsp
+							<li>Travelling<input type="checkbox" name="interests" size="10"></li>&nbsp
+							<li>Shopping<input type="checkbox" name="interests" size="10"></li>
+						</ul>
+					</td>
+				</tr>		
+
+				<tr>
+					<td><label>Qualification:</label></td>
+					<td>
+						<select>
+							<option value="">select</option>
+							<option value="Btech">B.Tech</option>
+							<option value="Mtech">M.Tech</option>
+							<option value="Mca">MCA</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><label id="label">Parents Information:</label></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><label for="name">FatherName:</label></td>
+					<td><input type="text" name="father name" size="50" min="5" max="15"placeholder="Enter your father name" ></td>
+				</tr>
+				<tr>
+					<td><label for="name">MotherName:</label></td>
+					<td><input type="text" name="mother name" size="50" min="5" max="15"placeholder="Enter your mother name" ></td>
+				</tr>
+				<tr>
+					<td><label>Moblie No:</label></td>
+					<td><input type="number" name="contact no" size="50" max="10" placeholder="Father Contact"></td>
+				</tr>	
+					
+				
+				<tr></tr>
+				<tr></tr>
+				<tr></tr>
+				<tr></tr>
+				<tr>
+					<td></td>
+					<td class="submit">
+						<input name="submit" type="submit" value="Submit">&nbsp
+						
+					</td>
+				</tr>
+			  </tbody>
+			</table>			
+		</form>
+		<!-- End form  -->
+	</main>
+</body>
+</html>

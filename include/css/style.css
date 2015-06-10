@@ -1,0 +1,95 @@
+body{
+	margin: 0px auto;
+	padding: 0px;
+	width: 750px;
+}
+main{
+	width: 750px;
+	height: 650px;
+	border:5px solid #889CF5;
+	border-radius: 8px ;
+	margin-top: 80px;
+	font-family: arial;	
+	background: #B2D5EE;
+}
+header {
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+	overflow: hidden;
+	border-bottom: 2px solid #889CF5;
+	box-shadow: 5px 5px 7px 7px #39427A inset;
+	font-size: 25px;
+	font-weight: bolder;
+	color: #990033;
+}
+form table {margin-top:10px;}
+form table td {vertical-align:top;}
+form table td label { top:3px;}
+table tbody td {padding-bottom:10px;}
+
+table{
+
+}
+input[type=text],[type=email],[type=password],[type=number]{
+	width:350px;
+	height:20px;
+}
+ul li{
+	text-decoration: none;
+	display: inline;
+
+}
+label{
+	font-weight: bolder;
+}
+p{
+	color: #990033;
+	display: inline;
+}
+input[type=submit]
+{
+	width: 130px;
+	height: 40px;
+	background: #990033;
+	color: white;
+	font-weight: bolder;
+	font-size: 16px;
+	border: #990033;
+	margin: 40px;
+	
+}
+.select
+{
+	width: 80px;
+	height: 22px;
+	vertical-align: middle;
+	text-align: center;
+
+}
+#label
+{
+	color:#990033;
+	border-bottom: 2px solid; 
+}
+
+.valid{
+	color: green;
+}
+.invalid{
+	color:#990033;
+}
+.correct{
+	outline:2px solid green;
+
+}
+.wrong{
+	outline:2px solid #990033;
+}
+.wrong2{
+	outline:2px solid ;
+}
+
+select{
+	width: 70px;
+	height: 23px;
+}
